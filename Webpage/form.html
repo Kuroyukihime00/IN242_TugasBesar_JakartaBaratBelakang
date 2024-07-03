@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Prediksi Harga Rumah di Jakarta</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to fill the form!
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Jumlah Kamar Tidur</label>
+            <input
+              type="number"
+              name="tidur"
+              id="name"
+              class="form-control"
+              placeholder="Jumlah Kamar Tidur"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Jumlah Kamar Mandi</label>
+            <input
+              type="number"
+              name="mandi"
+              id="email"
+              class="form-control"
+              placeholder="Jumlah Kamar Mandi"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Luas Tanah (m2)</label>
+            <input
+              type="number"
+              name="tanah"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Luas Tanah (m2)"
+              required/>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Luas Bangunan (m2)</label>
+            <input
+              type="number"
+              name="bangunan"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Luas Bangunan (m2)"
+              required/>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Carport</label>
+            <input
+              type="number"
+              name="carport"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Carport"
+              required/>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Pasokan Listrik (watt)</label>
+            <input
+              type="number"
+              name="listrik"
+              id="number"
+              class="form-control"
+              placeholder="Pasokan Listrik (watt)"
+              required/>
+          </div>
+          <div class="form-group">
+            <p>Kabupaten/Kota</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="utara">Jakarta Utara</option>
+              <option value="timur">Jakarta Timur</option>
+              <option value="barat">Jakarta Barat</option>
+              <option value="selatan">Jakarta Selatan</option>
+              <option value="pusat">Jakarta Pusat</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Kabupaten/Kota</p>
+            <label>
+              <input
+                name="gender"
+                value="utara"
+                type="radio"
+                class="input-radio"
+                checked 
+              />Jakarta Utara</label
+            >
+            <label>
+              <input
+                name="gender"
+                value="timur"
+                type="radio"
+                class="input-radio"
+              />Jakarta Timur</label
+            >
+      
+            <label
+              ><input
+                name="gender"
+                value="barat"
+                type="radio"
+                class="input-radio"
+              />Jakarta Barat</label
+            >
+
+            <label
+              ><input
+                name="gender"
+                value="selatan"
+                type="radio"
+                class="input-radio"
+              />Jakarta Selatan</label
+            >
+
+            <label
+              ><input
+                name="gender"
+                value="pusat"
+                type="radio"
+                class="input-radio"
+              />Jakarta Pusat</label
+            >
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Kecamatan</label>
+            <input
+              type="text"
+              name="kecamatan"
+              id="number"
+              class="form-control"
+              placeholder="Kecamatan"
+              required/>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Kelurahan</label>
+            <input
+              type="text"
+              name="kelurahan"
+              id="number"
+              class="form-control"
+              placeholder="Kelurahan"
+              required/>
+          </div>
+          <div class="form-group">
+            <p>Keamanan</p>
+            <select id="dropdown" name="keamanan" class="form-control" required>
+              <option disabled selected value>ada/tidak</option>
+              <option value="ada">ada</option>
+              <option value="tidak">tidak</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Taman</p>
+            <select id="dropdown" name="kelurahan" class="form-control" required>
+              <option disabled selected value>ada/tidak</option>
+              <option value="ada">ada</option>
+              <option value="tidak">tidak</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label id="number-label" for="number">Jarak Dengan Rumah Sakit Terdekat</label>
+            <input
+              type="number"
+              name="jarakRS"
+              id="number"
+              class="form-control"
+              placeholder="Jarak Dengan Rumah Sakit Terdekat (km)"
+              required/>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Jarak Dengan Sekolah Terdekat</label>
+            <input
+              type="number"
+              name="jarakSekolah"
+              id="number"
+              class="form-control"
+              placeholder="Jarak Dengan Sekolah Terdekat (km)"
+              required/>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Jarak Dengan Tol Terdekat</label>
+            <input
+              type="number"
+              name="jarakTol"
+              id="number"
+              class="form-control"
+              placeholder="Jarak Dengan Tol Terdekat (km)"
+              required/>
+          </div>
+
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
